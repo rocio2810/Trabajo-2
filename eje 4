@@ -1,0 +1,21 @@
+
+
+class Cuenta_Bancaria():
+    titular = ""
+    saldo = 0
+    def __init__(self, titular, saldo):
+        self.titular = titular
+        self.saldo = saldo
+        
+    def depositar(self,b):
+        self.saldo += b
+        print("se deposito",b,"saldo total:",self.saldo)
+        
+    def retirar(self,b):
+        self.saldo -= b
+        print("se retiro",b,"saldo total:",self.saldo)
+
+a = Cuenta_Bancaria("johana", 2000)
+print(a.saldo)
+a.depositar(2)
+a.retirar(10)

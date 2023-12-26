@@ -1,0 +1,29 @@
+class Estudiante:
+    nombre = ""
+    edad = 0
+    grado = 0
+    promedio = 0
+    
+    def __init__(self,nombre,edad,grado,promedio):
+        self.nombre = nombre
+        self.edad = edad
+        self.grado = grado
+        self.promedio = promedio
+
+es1 = Estudiante("juan", 14, 3, 10)
+es2 = Estudiante("flor", 16, 6, 1)
+es3 = Estudiante("brisa", 17, 6, 3)
+es4 = Estudiante("oliver", 17, 6, 7)
+
+lista = [es1 ,es2 ,es3 ,es4]
+
+promedios = [es1.promedio, es2.promedio, es3.promedio, es4.promedio]
+
+promedios.sort()
+
+promedios.reverse()
+
+print("lista de promedio de menor a mayor:",promedios)
+print("lista de promedio de mayor a menor:",promedios)
+print(es1.nombre,es1.promedio)
+    

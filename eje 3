@@ -1,0 +1,24 @@
+class Rectangulo:
+    ancho = ""
+    largo = ""
+    area = 0
+    perimetro = 0
+    
+    
+    def __init__(self,ancho,largo):
+        self.ancho = ancho
+        self.largo = largo
+        
+    def calcular_area(self):
+        self.area = self.ancho * self.largo
+        print("el area de un rectangulo es",self.area )
+        
+    def calcular_perimetro(self):
+        self.perimetro = self.ancho * 2 + self.largo * 2
+        print("el perimetro de un rectangulo es",self.perimetro)
+        
+a = Rectangulo(10,20)
+
+print(a.ancho)
+a.calcular_area()
+a.calcular_perimetro()

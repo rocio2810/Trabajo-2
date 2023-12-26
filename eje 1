@@ -1,0 +1,11 @@
+class Persona:
+    nombre = "rocio"
+    edad = 17
+    genero = "mujer"
+    
+a = Persona()
+print(Persona.nombre)
+
+pepito = Persona()
+pepito.edad = 18
+print(pepito.edad)
